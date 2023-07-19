@@ -20,6 +20,8 @@ document.querySelector('#app').innerHTML = `
     </p>
   </div>
 `
-
+const main = async () => {
+    console.log(await getToki("https://www.example.com"))
+};
 setupCounter(document.querySelector('#counter'))
-console.log(await getToki("https://www.example.com"))
+main().then();
